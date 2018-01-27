@@ -1,2 +1,16 @@
-form input:nth-child(1) {
-  background-color: lightgray; }
+form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 200px; }
+  form input, form textarea {
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    margin-bottom: 5px; }
+  form #przycisk {
+    background-color: gold;
+    width: 80px;
+    height: 40px;
+    font-weight: bold; }

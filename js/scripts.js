@@ -48,9 +48,11 @@
             this._addErrors('Treść wiadomości musi zawierać minimum 6 znaków');
         }
         
+        if(this._tabErrors == 0){
+            this._addErrors(`Dziękujemy, Twoja wiadomość została przesłana. Odpowiedź wyślemy na maila: ${e.target[0].value}`)
+        }
         
-        
-        if(this._tabErrors.length > 0){
+        if(this._tabErrors.length >= 0){
             e.preventDefault();
         }
        

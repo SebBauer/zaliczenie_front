@@ -1,8 +1,24 @@
 @import 'mixins';
 
 form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 200px;
+
     
-    input:nth-child(1){
+    input, textarea {
         background-color: lightgray;
+        border-radius: 5px;
+        border: 2px solid crimson;
+        margin-bottom: 5px;
+    }
+    
+    #przycisk {
+        background-color: gold;
+        width: 80px;
+        height: 40px;
+        font-weight: bold;
     }
 }
