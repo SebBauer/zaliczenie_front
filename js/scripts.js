@@ -69,7 +69,6 @@
     
     ValidateForm.prototype._showErrors = function(){
         
-        
         this._logErrors.innerHTML = `${this._loginAllErrors}`;
         this._dateBirthErrors.innerHTML = `${this._dateAllErrors}`;
         this._textErrors.innerHTML = `${this._textAllErrors}`;
