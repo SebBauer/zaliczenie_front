@@ -4,6 +4,10 @@ form {
   flex-direction: column;
   margin: 0 auto;
   margin-top: 200px; }
+  form #errors {
+    color: red;
+    font-size: 17px;
+    font-weight: bold; }
   form input, form textarea {
     background-color: lightgray;
     border-radius: 5px;

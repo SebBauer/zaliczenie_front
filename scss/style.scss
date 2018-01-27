@@ -7,6 +7,11 @@ form {
     margin: 0 auto;
     margin-top: 200px;
 
+    #errors{
+        color: red;
+        font-size: 17px;
+        font-weight: bold;
+    }
     
     input, textarea {
         background-color: lightgray;
@@ -21,4 +26,5 @@ form {
         height: 40px;
         font-weight: bold;
     }
+    
 }
