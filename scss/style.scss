@@ -1,0 +1,67 @@
+@import 'mixins';
+@import 'variables';
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px 40px 40px 40px;
+    background-color: lightgray;
+    font: {
+        family: 'Indie Flower', cursive;
+        size: 16px;
+        weight: bold;
+    }
+    border-radius: 30px;
+    transition: $transition;
+    
+    h2 {
+        text-align: center;
+        font-size: 38px;
+    }
+    
+    #loginError, #dateOfBirthError, #textareaError{
+        @include formErr(red);
+
+    }
+    
+    #correctForm{
+        @include formErr(green);
+    }
+    
+    input, textarea {
+        background-color: #e6e6e6;
+        border-radius: 5px;
+        border: 2px solid crimson;
+        margin-bottom: 5px;
+    }
+    
+    #przycisk {
+        background-color: $buttonAndFormHoverColor;
+        width: 80px;
+        height: 40px;
+        font: {
+            family: 'Indie Flower', cursive;
+            size: 19px;
+            weight: bold;
+        }
+        transition: $transition;
+    }
+    
+}
+
+form:hover {
+    background-color: $buttonAndFormHoverColor;
+    transition: $transition;
+    
+    #przycisk {
+        background-color: #ce3f3f;
+    }
+    
+    input, textarea {
+        border: 2px solid #7e0c49;
+        transition: $transition;
+    }
+}

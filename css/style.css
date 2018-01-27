@@ -1,0 +1,46 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 30px 40px 40px 40px;
+  background-color: lightgray;
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 2s; }
+  form h2 {
+    text-align: center;
+    font-size: 38px; }
+  form #loginError, form #dateOfBirthError, form #textareaError {
+    color: red;
+    font-size: 20px;
+    font-weight: bold; }
+  form #correctForm {
+    color: green;
+    font-size: 20px;
+    font-weight: bold; }
+  form input, form textarea {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    margin-bottom: 5px; }
+  form #przycisk {
+    background-color: lightcoral;
+    width: 80px;
+    height: 40px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 19px;
+    font-weight: bold;
+    transition: 2s; }
+
+form:hover {
+  background-color: lightcoral;
+  transition: 2s; }
+  form:hover #przycisk {
+    background-color: #ce3f3f; }
+  form:hover input, form:hover textarea {
+    border: 2px solid #7e0c49;
+    transition: 2s; }
