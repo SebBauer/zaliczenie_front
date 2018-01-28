@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pl">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Jquery</title>
 </head>
 
 <body>
-  <div id="form">
-    <form>
-        <div id="errors"></div>
-        Podaj e-mail <input type="text"><br>
-        Podaj datę urodzenia <input type="text"><br>
-        Treść wiadomości <br><textarea cols="30" rows="10"></textarea><br>
-        <input type="submit" value="Wyślij" id="przycisk">
+    <div id="form">
+        <form>
+           
+            <h2>Contact Us</h2>
+        
+            <div id="correctForm"></div>
+        
+            <div id="loginError"></div>
+            Podaj e-mail <input type="text"><br>
+        
+            <div id="dateOfBirthError"></div>
+            Podaj datę urodzenia (rrrr-mm-dd) <input type="text"><br>
+        
+            <div id="textareaError"></div>
+            Treść wiadomości <br><textarea cols="30" rows="10"></textarea><br>
+        
+            <input type="submit" value="Wyślij" id="przycisk">
        
-    </form>
+        </form>
     </div>
+    
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
